@@ -27,10 +27,10 @@ jobs:
 
       # Runs RubyCritic App
       - name: RubyCritic App
-        run: mkdir -p tmp/rubycritic && rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 90 app config lib
+        run: mkdir -p tmp/rubycritic && rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 90 reloj_checador_team03/app reloj_checador_team03/config reloj_checador_team03/lib
 
       # Runs RubyCritic on Tests
       - name: RubyCritic on Tests
-        run: mkdir -p tmp/rubycritic && rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 65 spec test
+        run: mkdir -p tmp/rubycritic && rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 65 reloj_checador_team03/spec reloj_checador_team03/test
 
  
