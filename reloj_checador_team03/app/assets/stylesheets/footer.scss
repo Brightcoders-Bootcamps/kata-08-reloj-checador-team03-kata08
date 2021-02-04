@@ -2,6 +2,7 @@ $font: Helvetica,
 sans-serif;
 $primary-color: #7ACC00;
 $secondary-color: #9DB0AC;
+$white-color: #ffffff;
 footer {
     background-color: $secondary-color;
     font: $font;
@@ -9,4 +10,21 @@ footer {
 
 .font-type {
     font: $font;
+}
+
+.columnColor ul li a {
+    color: $white-color;
+    text-decoration: none;
+}
+
+.columnColor ul li a:hover {
+    color: $primary-color;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+body {
+    margin-bottom: 15px;
 }
