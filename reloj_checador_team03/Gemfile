@@ -22,8 +22,10 @@ gem 'rubocop'
 gem 'devise'
 gem 'rspec'
 gem 'bootstrap', '~> 5.0.0.beta1'
+gem 'popper_js'
 gem 'simple_form'
 gem 'cancan'
+gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

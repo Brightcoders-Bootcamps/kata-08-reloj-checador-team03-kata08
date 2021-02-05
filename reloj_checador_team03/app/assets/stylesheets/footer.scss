@@ -1,0 +1,35 @@
+$font: Helvetica,
+sans-serif;
+$primary-color: #7ACC00;
+$secondary-color: #9DB0AC;
+$white-color: #ffffff;
+footer {
+    background-color: $secondary-color;
+    font: $font;
+}
+
+.font-type {
+    font: $font;
+}
+
+.columnColor ul li a {
+    color: $white-color;
+    text-decoration: none;
+}
+
+.columnColor ul li a:hover {
+    color: $primary-color;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.image-footer {
+    width: 150px;
+}
+
+img {
+    display: flex;
+    margin: 0 auto;
+}

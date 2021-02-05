@@ -1,0 +1,34 @@
+$font: Helvetica,
+sans-serif;
+$primary-color: #7ACC00;
+$secondary-color: #9DB0AC;
+$white-color: #ffffff;
+$cool-gray: #d9d9d6;
+.header-container {
+    background-color: $secondary-color;
+    font: $font;
+}
+
+#image-header {
+    width: 200px;
+    /*height: 100px;*/
+}
+
+.color-letter {
+    color: $white-color !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.color-letter:hover {
+    color: $cool-gray !important;
+}
+
+.color-letter-toggle:hover {
+    color: $primary-color !important;
+}
+
+.logout-togle:hover {
+    color: red !important;
+}
