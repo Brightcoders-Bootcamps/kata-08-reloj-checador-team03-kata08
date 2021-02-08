@@ -1,0 +1,10 @@
+<% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee.name %></td>
+        <td><%= employee.last_name %></td>
+        <td><%= employee.position %></td>
+        <td><%= employee.email %></td>
+        <td><%= employee.private_number %></td>
+        <td><i class="far fa-edit"></i><%= link_to 'Edit', edit_employee_path(employee), remote: true %> &nbsp <i class="fas fa-user-times"></i><%= link_to 'Delete', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
