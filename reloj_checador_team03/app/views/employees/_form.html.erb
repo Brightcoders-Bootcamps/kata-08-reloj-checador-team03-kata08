@@ -1,4 +1,3 @@
-
 <div class="modal-dialog">
 <% @employee= Employee.new if @employee.nil?  %>
 <%  if request.path.include?('edit') then text = 'Edit Employee' else text = 'Create a new Employee' end %>

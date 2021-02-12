@@ -3,7 +3,11 @@ class BranchesController < ApplicationController
 
   # GET /branches or /branches.json
   def index
-    @branches = Branch.all
+    @branches = Branch.all.page(params[:page])
+  end
+
+  def search 
+    @branches = Branch.search(params[:search]).page(params[:page])
   end
 
   # GET /branches/1 or /branches/1.json
