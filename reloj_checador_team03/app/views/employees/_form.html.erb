@@ -1,8 +1,8 @@
 
 <div class="modal-dialog">
-<% @employee= Employee.new if @employee.nil?  %>
+<% @employee= Employee.new if @employee.nil? %>
 <%  if request.path.include?('edit') then text = 'Edit Employee' else text = 'Create a new Employee' end %>
-<%= simple_form_for(@employee) do |f| %>
+<%= simple_form_for(@employee, remote: true) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
     <div class="modal-content">
