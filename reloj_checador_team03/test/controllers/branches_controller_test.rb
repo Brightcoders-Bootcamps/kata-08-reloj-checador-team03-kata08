@@ -45,4 +45,10 @@ class BranchesControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to branches_url
   end
+
+  test "should preview branch" do
+    get branch_url(@branch)
+    assert_response :success
+  end
+
 end
