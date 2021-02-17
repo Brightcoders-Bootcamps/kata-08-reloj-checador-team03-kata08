@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :attendances
+  #devise_for :users
+  #resources :attendances
   resources :branches
   resources :employees
   post 'employees/search', :to => 'employees#search'
