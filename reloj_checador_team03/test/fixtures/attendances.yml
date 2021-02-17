@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_attendance: 2021-02-07
+  checkin_morning: 2021-02-07 15:57:16
+  checkout_morning: 2021-02-07 15:57:16
+  checkin_afternoon: 2021-02-07 15:57:16
+  checkout_afternoon: 2021-02-07 15:57:16
+
+two:
+  date_attendance: 2021-02-07
+  checkin_morning: 2021-02-07 15:57:16
+  checkout_morning: 2021-02-07 15:57:16
+  checkin_afternoon: 2021-02-07 15:57:16
+  checkout_afternoon: 2021-02-07 15:57:16
