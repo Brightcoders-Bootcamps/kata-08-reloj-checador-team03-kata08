@@ -1,0 +1,7 @@
+<% @branches.each do |branch| %>
+      <tr>
+        <td><%= branch.name %></td>
+        <td><%= branch.address %></td>
+        <td><i class="far fa-edit"></i><%= link_to 'Edit', edit_branch_path(branch), remote: true %> &nbsp <i class="fas fa-user-times"></i><%= link_to 'Delete', branch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
