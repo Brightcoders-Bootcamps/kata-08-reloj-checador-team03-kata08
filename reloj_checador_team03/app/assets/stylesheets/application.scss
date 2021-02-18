@@ -1,7 +1,8 @@
 @import "bootstrap";
 @import "header";
 @import "footer";
-@import "fooapp";
 @import "employees";
 @import "kaminari_edit";
 @import "fontawesome";
+@import 'toastr/build/toastr.min';
+@import "fooapp";
