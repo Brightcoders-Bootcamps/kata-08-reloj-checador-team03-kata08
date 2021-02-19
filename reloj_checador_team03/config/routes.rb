@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   #resources :attendances
   resources :branches
   resources :employees
+  #resources :stats_per_day
   post 'employees/search', :to => 'employees#search'
   post 'branches/search', :to => 'branches#search'
   root 'test#index'
