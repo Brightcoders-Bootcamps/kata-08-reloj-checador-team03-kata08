@@ -12,7 +12,8 @@ import * as bootstrap from 'bootstrap'
 import toastr from 'toastr'
 window.toastr = toastr
 import "@fortawesome/fontawesome-free/css/all"
-//require('reports_kit/application')
+require('reports_kit')
+
 
 toastr.options = {
     "closeButton": true,
