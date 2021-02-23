@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee_id: MyString
+  direction: false
+  time: 2021-02-22 18:21:44
+
+two:
+  employee_id: MyString
+  direction: false
+  time: 2021-02-22 18:21:44
