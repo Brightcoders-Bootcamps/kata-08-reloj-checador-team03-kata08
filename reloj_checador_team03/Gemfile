@@ -30,6 +30,7 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'popper'
 gem 'reports_kit'
+#gem 'chartkick'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
