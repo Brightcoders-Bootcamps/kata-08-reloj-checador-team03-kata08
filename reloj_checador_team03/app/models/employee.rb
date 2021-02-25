@@ -12,4 +12,8 @@ class Employee < ApplicationRecord
           where('name LIKE ? or last_name LIKE ? or email LIKE ?', "%#{text}%", "%#{text}%", "%#{text}%")
         end
     end
+
+    def fullname
+      "#{self.name} #{self.last_name}"
+    end
 end

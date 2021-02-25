@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   post 'users/search', :to => 'users#search'
   post 'branches/search', :to => 'branches#search'
   root 'attendances#new'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  
 end
