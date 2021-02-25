@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  #devise_for :users
-  #resources :attendances
+
+  devise_for :users, controllers: {registrations: 'users/registrations', sessions: 'users/sessions'}
   resources :branches
   resources :employees
+  resources :attendances
+  get 'users/index'
+  get 'reports/attendance_by_day'
+  get 'reports/average_time_employees'
+  get 'reports/absence_employee'
   post 'employees/search', :to => 'employees#search'
+  post 'users/search', :to => 'users#search'
   post 'branches/search', :to => 'branches#search'
-  root 'test#index'
+  root 'attendances#new'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

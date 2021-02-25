@@ -1,0 +1,44 @@
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+
+<div class="modal-dialog">
+
+<%= simple_form_for(@user1, as: @user1, url: user_registration_path, html: { method: :patch }) do |f| %>
+  <%= f.error_notification %>
+<div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+  <div class="form-inputs">
+    <%= f.input :name, required: true, autofocus: true %>
+    <%= f.input :lastname, required: true %>
+    <%= f.input :username, required: true %>
+    <%= f.input :email, required: true %>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+    <% end %>
+ <%= f.hidden_field :id %>
+    <%= f.input :password,
+                hint: "leave it blank if you don't want to change it",
+                required: false,
+                input_html: { autocomplete: "new-password" } %>
+    <%= f.input :password_confirmation,
+                required: false,
+                input_html: { autocomplete: "new-password" } %>
+  
+  </div>
+  </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <%= f.button :submit, "Update", :class => 'btn btn-primary create-button'%>
+    
+       
+  </div>
+    </div>
+    <% end %>
+  </div>
+
+

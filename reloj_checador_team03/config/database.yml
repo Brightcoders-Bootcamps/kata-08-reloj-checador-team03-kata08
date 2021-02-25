@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: reloj_checador_team03_development
-  username: mike
-  password: tscom2020
+  username: fego
+  password: kurosu
   host: localhost
   port: 5432
 
