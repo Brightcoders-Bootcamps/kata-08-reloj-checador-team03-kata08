@@ -16,7 +16,7 @@
                   <a class="nav-link color-letter" href="/branches">Branch</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link color-letter" href="#">User</a>
+                  <a class="nav-link color-letter" href="/users/index">User</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle color-letter" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,11 +34,10 @@
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a class=" color-letter nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Raul Ferreira <i class="far fa-user-circle fa-2x"></i>
+                      <%= "#{current_user.name } #{current_user.lastname}"  %> <i class="far fa-user-circle fa-2x"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item color-letter-toggle" href="#">Profile</a></li>
-                      <li><a class="dropdown-item logout-togle" href="#">Logout</a></li>
+                      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"dropdown-item logout-togle" %>
                     </ul>
                   </li>
               </ul>

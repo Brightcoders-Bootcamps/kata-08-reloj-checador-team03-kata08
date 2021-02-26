@@ -6,23 +6,13 @@
 </p>
 
 <p>
-  <strong>Checkin morning:</strong>
-  <%= @attendance.checkin_morning %>
+  <strong>Time attendance:</strong>
+  <%= @attendance.time_attendance %>
 </p>
 
 <p>
-  <strong>Checkout morning:</strong>
-  <%= @attendance.checkout_morning %>
-</p>
-
-<p>
-  <strong>Checkin afternoon:</strong>
-  <%= @attendance.checkin_afternoon %>
-</p>
-
-<p>
-  <strong>Checkout afternoon:</strong>
-  <%= @attendance.checkout_afternoon %>
+  <strong>Employee:</strong>
+  <%= @attendance.employee_id %>
 </p>
 
 <%= link_to 'Edit', edit_attendance_path(@attendance) %> |

@@ -11,8 +11,9 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<% if user_signed_in?%>
   <body class="d-flex flex-column min-vh-100">
-  <%= render "layouts/header" %>
+  <%= render "layouts/header"  %>
   <main class="flex-shrink-0">
     <div class="container">
       <div class="row">
@@ -20,6 +21,11 @@
       </div>
     </div>
    </main>
-  <%= render "layouts/footer" %>
+  <%= render "layouts/footer"%>
   </body>
+  <% else  %>
+  <body>
+ <%= yield %>
+  </body>
+  <% end %>
 </html>

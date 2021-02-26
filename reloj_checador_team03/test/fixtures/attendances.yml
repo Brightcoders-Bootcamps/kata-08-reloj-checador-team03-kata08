@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_attendance: 2021-02-23
+  time_attendance: 2021-02-23 13:56:15
+  employee: one
+
+two:
+  date_attendance: 2021-02-23
+  time_attendance: 2021-02-23 13:56:15
+  employee: two

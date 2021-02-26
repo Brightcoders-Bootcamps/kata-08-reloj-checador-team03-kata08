@@ -1,17 +1,62 @@
+<%= toastr_flash %>
+<div class="container-fluid">
+  <div class="row main-content text-center bg-success">
+   
+    <div class="col-md-4 text-center counter-styles" id="content-timer" > 
+        <div class="row">
+          <p id="time"></p>
+        </div>
+        <div class="row">
+          <p id="date"></p>
+        </div>
+    </div>
 
-<%= simple_form_for(@attendance) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <div class="col-md-8 col-xs-12 col-sm-12 check_form">
+      <div class=container-fluid>
 
-  <div class="form-inputs">
-    <%= f.input :date_attendance %>
-    <%= f.input :checkin_morning %>
-    <%= f.input :checkout_morning %>
-    <%= f.input :checkin_afternoon %>
-    <%= f.input :checkout_afternoon %>
+        <div class="row">
+          <h2>Welcome to FooCorp</h2>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+
+            <%= simple_form_for(@attendance) do |f| %>
+         
+              <div class="form-inputs form__input row">
+                <%= f.input :employee_id, label: "Enter your code: ", :class => 'text_field', :type => "number", :min => "0" %>
+              </div>
+
+              <div class="" id="form-actions">
+                <%= f.submit "Check in", :class => "btn btn-primary create-button"%>
+                <%= f.submit "Check out", :class => "btnOut btn"%>
+              </div>
+
+            <% end %>
+
+            <div class="row justify-content-center" id="login-text">
+              <div class="col-8 signup">
+                <%= link_to 'Have you an account?  Sign up', new_user_session_path %>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
+</div>
+<script>
+var myVar = setInterval(myTimer, 1000);
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+function myTimer() {
+  var date = new Date()
+  var day = date.getDate()
+  var month = date.getMonth() + 1
+  var year = date.getFullYear()
+  document.getElementById("date").innerHTML = `${day}/0${month}/${year}`;
+  document.getElementById("time").innerHTML = date.toLocaleTimeString();
+}
+</script>
