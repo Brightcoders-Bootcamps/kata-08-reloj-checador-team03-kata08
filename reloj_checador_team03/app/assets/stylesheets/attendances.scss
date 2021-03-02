@@ -3,45 +3,32 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 #time {
     font-size: 40px;
-}
-
-#date {
+}#date {
     font-size: 20px;
-}
-
-#content {
+}#content {
     background: white;
     min-height: 100%;
     padding-top: 80px;
-}
-
-#form-actions {
+}#form-actions {
     margin-top: 5px;
-}
-
-#login-text {
+}#login-text {
     margin-top: 10px;
-}
-
-.counter-styles {
-    background-color: #7AC143;
+}.counter-styles {
+    background-color: #7AC143
+;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-}
-
-.main-content {
+}.main-content {
     width: 50%;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
     margin: 5em auto;
     display: flex;
-}
-
-@media screen and (max-width: 640px) {
+}@media screen and (max-width: 640px) {
     .main-content {
         width: 90%;
     }
@@ -49,51 +36,41 @@
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
-}
-
-@media screen and (min-width: 642px) and (max-width:1050px) {
+}@media screen and (min-width: 642px) and (max-width:1050px) {
     .main-content {
         width: 70%;
     }
-}
-
-.row>h2 {
-    color: #7AC143;
+}.row>h2 {
+    color: #7AC143
+;
     padding-top: 15px;
     padding-bottom: 10px;
-}
-
-.check_form {
+}.check_form {
     background-color: #fff;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top: 1px solid #ccc;
     border-right: 1px solid #ccc;
-}
-
-form {
+}form {
     padding: 0 2em;
-}
-
-.form__input:focus {
-    border-bottom-color: #7AC143;
+}.form__input:focus {
+    border-bottom-color: #7AC143
+;
     box-shadow: 0 0 5px rgba(0, 80, 80, .4);
     border-radius: 4px;
-}
-
-.btn {
+}.index-btn {
     transition: all .5s ease;
     width: 70%;
     border-radius: 30px;
-    color: #7AC143;
+    color: #7AC143
+;
     font-weight: 600;
     background-color: #fff;
-    border: 1px solid #7AC143;
+    border: 1px solid #7AC143
+;
     margin-top: .5em;
     margin-bottom: 1em;
-}
-
-.btnOut {
+}.index-btnOut {
     transition: all .5s ease;
     width: 70%;
     border-radius: 30px;
@@ -103,20 +80,21 @@ form {
     border: 1px solid red;
     margin-top: .5em;
     margin-bottom: 1em;
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: #7AC143;
+}.index-btn:hover,
+.index-btn:focus {
+    background-color: #7AC143
+;
     color: #fff;
-}
-
-.btnOut:hover,
-.btnOut:focus {
+}.index-btnOut:hover,
+.index-btnOut:focus {
     background-color: red;
     color: #fff;
-}
-
-.signup {
+}.signup {
     padding-bottom: 15px;
-}
+}input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}input[type=number] {
+    -moz-appearance: textfield;
+  }

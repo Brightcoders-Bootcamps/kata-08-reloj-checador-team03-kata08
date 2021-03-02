@@ -22,7 +22,7 @@ class AttendancesController < ApplicationController
   # POST /attendances or /attendances.json
   def create
     @attendance = Attendance.new(attendance_params)
-    @attendance.date_time = DateTime.new
+    @attendance.date_time = DateTime.now
     @attendance.employee = Employee.find_by(private_number: @attendance.employee_id)
     @attendance.type_check = params[:commit]
 

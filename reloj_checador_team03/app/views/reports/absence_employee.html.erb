@@ -1,1 +1,30 @@
-<h1>h1</h1>
+<h1>Report Absence Per Employee per month</h1>
+
+<div class="container-content">
+<div class="d-flex justify-content-between bd-highlight mb-6">
+  <div class="d-flex justify-content-start ">
+     <%= form_tag(reports_absence_employee_path, method: "post", remote: true, authenticity_token: true, role: "form",class: "form-row") do %>
+      <%= text_field_tag 'first_date', "Select Date One", class: 'flatpickr datepicker form-control' %>    
+      <%= submit_tag "Search", :class => 'btn btn-primary create-button' %>
+     <% end %>
+  </div>
+  
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Absences</th>
+    </tr>
+  </thead>
+
+    <tbody id="absence_by_month">
+    <%= render 'search_absence', remote: true %>
+  </tbody>
+</table>
+
+</div>
+
+<script>
+flatpickr(".datepicker", {})
+</script>

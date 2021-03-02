@@ -1,0 +1,8 @@
+<% unless @absences.nil? %>
+  <% @absences.each do |absence| %>
+      <tr>
+        <td><%= absence["name"] %> <%= absence["last_name"] %></td>
+        <td><%= absence["absence"] %></td>
+      </tr>
+  <% end %>
+<% end %>
